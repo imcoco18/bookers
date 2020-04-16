@@ -45,7 +45,7 @@
 
 　<% if @book.errors.any? %>
   	<div id="error_explanation">
-    <h2><%= @book.errors.count %></h2>
+    <h2>error: <%= @book.errors.count %></h2>
     	<ul>
     		<% @book.errors.full_messages.each do |msg| %>
       			<li><%= msg %></li>

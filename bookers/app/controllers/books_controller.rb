@@ -46,7 +46,7 @@ class BooksController < ApplicationController
       redirect_to book_path(@book.id)
 
     else
-      @book = Book.find(params[:id])
+
       render "edit"
 
     end
